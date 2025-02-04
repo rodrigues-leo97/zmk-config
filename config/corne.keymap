@@ -59,10 +59,10 @@
 
         layer_3 {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans    &trans  &trans  &trans         &trans            &trans        &trans
-&trans           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans    &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
-&trans           &trans                &trans                 &trans  &trans  &trans    &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                                                              &trans  &trans  &trans    &trans  &trans  &kp SLASH
+&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans  &trans    &trans  &trans  &trans         &trans            &trans        &trans
+&kp TILDE2       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans  &trans    &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
+&kp UNDERSCORE   &trans                &trans                 &trans     &trans  &trans    &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+                                                              &trans     &trans  &trans    &trans  &trans  &kp SLASH
             >;
         };
     };

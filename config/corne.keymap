@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        interrogation {
+            bindings = <&kp QUESTION>;
+            key-positions = <0 12>;
+        };
+
+        exclamation {
+            bindings = <&kp LS(EXCLAMATION)>;
+            key-positions = <1 13>;
+        };
+
+        arroba {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 14>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <12 24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

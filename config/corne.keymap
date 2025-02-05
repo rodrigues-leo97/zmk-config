@@ -33,7 +33,7 @@
         };
 
         tilde {
-            bindings = <&kp TILDE2>;
+            bindings = <&kp TILDE>;
             key-positions = <13 25>;
         };
 

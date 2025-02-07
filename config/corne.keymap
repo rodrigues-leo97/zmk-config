@@ -43,12 +43,12 @@
         };
 
         projectIntellij {
-            bindings = <&kp LG(KP_NUMBER_1)>;
+            bindings = <&kp RG(KP_N1)>;
             key-positions = <5 17>;
         };
 
         commitIntellij {
-            bindings = <&kp LG(KP_N0)>;
+            bindings = <&kp LA(KP_N0)>;
             key-positions = <17 29>;
         };
 

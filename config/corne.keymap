@@ -41,6 +41,26 @@
             bindings = <&kp TILDE>;
             key-positions = <9 21>;
         };
+
+        projectIntellij {
+            bindings = <&kp LA(F1)>;
+            key-positions = <5 17>;
+        };
+
+        commitIntellij {
+            bindings = <&kp LA(KP_N0)>;
+            key-positions = <17 29>;
+        };
+
+        buildIntellij {
+            bindings = <&kp LS(H)>;
+            key-positions = <6 18>;
+        };
+
+        viewDebbug {
+            bindings = <&kp LA(KP_NUMBER_5)>;
+            key-positions = <7 19>;
+        };
     };
 
     keymap {

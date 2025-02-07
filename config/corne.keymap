@@ -43,7 +43,7 @@
         };
 
         projectIntellij {
-            bindings = <&kp LA(F1)>;
+            bindings = <&kp LA(KP_NUMBER_1)>;
             key-positions = <5 17>;
         };
 
@@ -53,12 +53,12 @@
         };
 
         buildIntellij {
-            bindings = <&kp LS(H)>;
+            bindings = <&kp LS(F9)>;
             key-positions = <6 18>;
         };
 
         viewDebbug {
-            bindings = <&kp LA(KP_NUMBER_5)>;
+            bindings = <&kp LC(KP_NUMBER_0)>;
             key-positions = <7 19>;
         };
     };

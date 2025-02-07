@@ -48,7 +48,7 @@
         };
 
         commitIntellij {
-            bindings = <&kp LG(KP_NUMBER_0)>;
+            bindings = <&kp LG(KP_N0)>;
             key-positions = <17 29>;
         };
 

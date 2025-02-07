@@ -43,12 +43,12 @@
         };
 
         projectIntellij {
-            bindings = <&kp LA(KP_NUMBER_1)>;
+            bindings = <&kp LG(KP_NUMBER_1)>;
             key-positions = <5 17>;
         };
 
         commitIntellij {
-            bindings = <&kp LA(KP_N0)>;
+            bindings = <&kp LG(KP_NUMBER_0)>;
             key-positions = <17 29>;
         };
 
@@ -58,7 +58,7 @@
         };
 
         viewDebbug {
-            bindings = <&kp LC(KP_NUMBER_0)>;
+            bindings = <&kp LG(KP_NUMBER_5)>;
             key-positions = <7 19>;
         };
     };

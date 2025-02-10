@@ -44,12 +44,12 @@
 
         projectIntellij {
             bindings = <&kp LA(NUMBER_1)>;
-            key-positions = <13 1>;
+            key-positions = <1 2>;
         };
 
         commitIntellij {
             bindings = <&kp LA(N0)>;
-            key-positions = <13 25>;
+            key-positions = <13 14>;
         };
 
         buildIntellij {

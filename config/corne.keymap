@@ -44,17 +44,17 @@
 
         projectIntellij {
             bindings = <&kp LA(NUMBER_1)>;
-            key-positions = <5 17 29>;
+            key-positions = <0 12 24>;
         };
 
         commitIntellij {
             bindings = <&kp LA(N0)>;
-            key-positions = <17 29>;
+            key-positions = <12 24>;
         };
 
         buildIntellij {
             bindings = <&kp LS(F9)>;
-            key-positions = <18 19>;
+            key-positions = <1 13 25>;
         };
 
         righParenteses {
@@ -100,11 +100,6 @@
         rightBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 34>;
-        };
-
-        teste {
-            bindings = <&kp LA(N0)>;
-            key-positions = <0 1 2>;
         };
     };
 

@@ -54,12 +54,52 @@
 
         buildIntellij {
             bindings = <&kp LS(F9)>;
+            key-positions = <18 19>;
+        };
+
+        righParenteses {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 19>;
+        };
+
+        leftParenteses {
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <6 18>;
         };
 
-        viewDebbug {
-            bindings = <&kp LG(KP_NUMBER_5)>;
-            key-positions = <7 19>;
+        leftBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <8 20>;
+        };
+
+        rightBrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <9 21 33>;
+        };
+
+        underline {
+            bindings = <&kp UNDER>;
+            key-positions = <18 30>;
+        };
+
+        conditional {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <19 31>;
+        };
+
+        or {
+            bindings = <&kp PIPE>;
+            key-positions = <20 32>;
+        };
+
+        leftBracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <21 33>;
+        };
+
+        rightBracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <22 34>;
         };
     };
 
@@ -81,7 +121,7 @@
             >;
         };
 
-        lower_layer {
+        numeric_lower {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -89,10 +129,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB            &kp N1        &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp UP_ARROW  &kp N8     &kp N9     &kp N0  &kp BSPC
-&kp LEFT_BRACKET   &kp NUMBER_6  &kp N7  &kp N8    &kp N9  &kp N0       &kp LEFT  &kp DOWN      &kp RIGHT  &kp RIGHT  &trans  &trans
-&kp RIGHT_BRACKET  &trans        &trans  &trans    &trans  &trans       &trans    &trans        &trans     &trans     &trans  &to 0
-                                         &kp LGUI  &trans  &kp SPACE    &kp RET   &trans        &kp RALT
+&kp TAB            &kp N1        &kp N2  &kp N3        &kp N4  &kp N5       &kp N6    &kp UP_ARROW  &kp N8     &kp N9     &kp N0        &kp BSPC
+&kp LEFT_BRACKET   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N0  &kp N0       &kp LEFT  &kp DOWN      &kp RIGHT  &kp RIGHT  &kp UP_ARROW  &trans
+&kp RIGHT_BRACKET  &kp N7        &kp N8  &kp N9        &trans  &trans       &trans    &trans        &trans     &trans     &trans        &to 0
+                                         &kp LGUI      &trans  &kp SPACE    &kp RET   &trans        &kp RALT
             >;
         };
 
@@ -107,16 +147,34 @@
 &kp TAB    &kp EXCL   &kp AT      &kp HASH  &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &kp EQUAL  &kp DELETE  &trans    &trans    &trans            &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans     &trans      &trans    &trans    &bt BT_CLR_ALL    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                  &kp LGUI  &trans    &kp SPACE         &kp RET    &trans     &kp RALT
+                                  &kp LGUI  &trans    &kp SPACE         &kp RET    &to 4      &kp RALT
             >;
         };
 
         layer_3 {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans  &kp BACKSPACE    &trans  &trans  &trans         &trans            &trans        &trans
-&kp TILDE        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans  &trans           &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
-&kp UNDERSCORE   &trans                &trans                 &trans     &trans  &trans           &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                                                              &trans     &trans  &trans           &trans  &trans  &kp SLASH
+&to 5           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans  &kp BACKSPACE    &trans  &trans  &trans         &trans            &trans        &trans
+&kp TILDE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans  &trans           &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
+&kp UNDERSCORE  &trans                &trans                 &trans     &trans  &trans           &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+                                                             &trans     &trans  &trans           &trans  &trans  &kp SLASH
+            >;
+        };
+
+        bluetooth_layer {
+            bindings = <
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_NXT      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_PRV      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        arrow_layer {
+            bindings = <
+&trans          &trans          &trans           &trans        &trans     &kp BACKSPACE    &trans      &trans  &trans  &trans  &trans  &kp BACKSPACE
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW  &trans     &trans           &trans      &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans           &trans        &trans     &trans           &trans      &trans  &trans  &trans  &trans  &trans
+                                                 &to 0         &kp ENTER  &kp SPACE        &kp RETURN  &trans  &trans
             >;
         };
     };

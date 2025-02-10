@@ -101,6 +101,11 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 34>;
         };
+
+        teste {
+            bindings = <&kp LA(N0)>;
+            key-positions = <0 1 2>;
+        };
     };
 
     keymap {

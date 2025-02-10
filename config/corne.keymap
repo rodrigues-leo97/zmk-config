@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -44,13 +43,13 @@
         };
 
         projectIntellij {
-            bindings = <&kp RG(KP_N1)>;
-            key-positions = <5 17>;
+            bindings = <&kp RG(NUMBER_1)>;
+            key-positions = <5 17 29 37>;
         };
 
         commitIntellij {
             bindings = <&kp LG(N0)>;
-            key-positions = <17 29>;
+            key-positions = <17 29 37>;
         };
 
         buildIntellij {
@@ -101,16 +100,6 @@
         rightBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 34>;
-        };
-
-        testesdf {
-            bindings = <&kt LG(KP_NUMBER_0)>;
-            key-positions = <27 28 29>;
-        };
-
-        testehjk {
-            bindings = <&kt LG(N0)>;
-            key-positions = <27 28 29 26>;
         };
     };
 

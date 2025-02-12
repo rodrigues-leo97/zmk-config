@@ -156,9 +156,9 @@
 
         layer_3 {
             bindings = <
-&to 5           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mkp MB1        &msc SCRL_UP    &mkp MB2           &trans  &trans  &trans         &trans            &trans        &trans
-&kp TILDE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
-&kp UNDERSCORE  &trans                &trans                 &trans          &trans          &trans             &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+&bt BT_CLR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mkp MB1        &msc SCRL_UP    &kp BACKSPACE      &trans  &trans  &trans         &trans            &trans        &trans
+&bt BT_NXT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans         &trans            &kp COLON     &kp DOUBLE_QUOTES
+&bt BT_CLR_ALL  &trans                &trans                 &trans          &trans          &trans             &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
                                                              &trans          &trans          &trans             &trans  &trans  &kp SLASH
             >;
         };

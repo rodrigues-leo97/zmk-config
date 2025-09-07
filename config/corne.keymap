@@ -140,10 +140,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB            &kp N1        &kp N2  &kp N3        &mmv MOVE_UP  &mmv MOVE_RIGHT    &kp N6    &kp UP_ARROW  &kp N8     &kp N9        &kp N0        &kp BSPC
-&kp LEFT_BRACKET   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N0        &mmv MOVE_DOWN     &kp LEFT  &kp DOWN      &kp RIGHT  &kp UP_ARROW  &kp UP_ARROW  &trans
-&kp RIGHT_BRACKET  &kp N7        &kp N8  &kp N9        &trans        &trans             &trans    &trans        &trans     &trans        &trans        &to 0
-                                         &kp LGUI      &to 4         &kp SPACE          &kp RET   &trans        &kp RALT
+&kp TAB            &kp N1        &kp N2  &kp N3        &mmv MOVE_UP  &kp BACKSPACE     &kp N6    &kp UP_ARROW  &kp N8     &kp N9        &kp N0        &kp BSPC
+&kp LEFT_BRACKET   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N0        &mmv MOVE_DOWN    &kp LEFT  &kp DOWN      &kp RIGHT  &kp UP_ARROW  &kp UP_ARROW  &trans
+&kp RIGHT_BRACKET  &kp N7        &kp N8  &kp N9        &trans        &trans            &trans    &trans        &trans     &trans        &trans        &to 0
+                                         &kp LGUI      &to 4         &kp SPACE         &kp RET   &trans        &kp RALT
             >;
         };
 
